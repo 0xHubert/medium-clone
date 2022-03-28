@@ -16,7 +16,8 @@ interface Props {
     post: Post;
 }
 
-const Post: NextPage<Props> = ({post}) => {
+
+const Post: NextPage = ({post}: Props) => {
     //console.log(post)
     const [submitted, setSubmitted] = useState(false);
     const {
