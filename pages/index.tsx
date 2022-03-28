@@ -9,7 +9,7 @@ import { Post } from '../typings'
 interface Props {
   posts: [Post];
 }
-const Home: NextPage = ({ posts }: Props) => {
+export default function Home({posts}:Props) {
  // console.log(posts)
   return (
     <div className="max-w-7xl mx-auto">
@@ -73,4 +73,4 @@ export const getServerSideProps = async () => {
     }
   }
 }
-export default Home
+

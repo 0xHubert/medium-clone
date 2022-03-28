@@ -17,7 +17,7 @@ interface Props {
 }
 
 
-const Post: NextPage = ({post}: Props) => {
+export default function Post({post}: Props){
     //console.log(post)
     const [submitted, setSubmitted] = useState(false);
     const {
@@ -162,7 +162,6 @@ const Post: NextPage = ({post}: Props) => {
     )
 }
 
-export default Post;
 
 export const getStaticPaths = async () => {
     const query = `
